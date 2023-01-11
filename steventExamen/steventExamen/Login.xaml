@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="steventExamen.Login">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Label Text="Steven Tituaña" FontSize="20" HorizontalTextAlignment="Center"/>
+
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" ></Image>
+
+
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="USUARIO:" FontSize="18" Grid.Row="0" Grid.Column="0"></Label>
+                <Entry x:Name="txtUsuario" Placeholder="INGRESE.." Grid.Row="0" Grid.Column="1"></Entry>
+                <Label Text="CLAVE:" FontSize="18" Grid.Row="1" Grid.Column="0"></Label>
+                <Entry x:Name="txtClave" Placeholder="INGRESE.." IsPassword="True" Grid.Row="1" Grid.Column="1"></Entry>
+
+            </Grid>
+
+            <Button x:Name="btnIniciarLogin" Text="Inicar Sesión" TextColor="Blue" Clicked="btnIniciarLogin_Clicked"></Button>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

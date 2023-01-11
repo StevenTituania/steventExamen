@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="steventExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Resúmen" HorizontalTextAlignment="Center" TextColor="#2196F3" FontSize="28"/>
+
+            <Label x:Name="lblUsuarioS" HorizontalTextAlignment="End" FontSize="18"/>
+
+
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre:" FontSize="18" Grid.Row="0" Grid.Column="0"></Label>
+                <Entry x:Name="txtNombreS" Placeholder="INGRESE.." IsReadOnly="TRUE"  Grid.Row="0" Grid.Column="1"></Entry>
+                <Label Text="Total" FontSize="18" Grid.Row="1" Grid.Column="0"></Label>
+                <Entry x:Name="txtTotalS" Placeholder="INGRESE.."  IsReadOnly="TRUE" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"></Entry>
+
+            </Grid>
+
+            <Button x:Name="btnInfo" TextColor="Blue" Text="Acerca De" Clicked="btnInfo_Clicked"></Button>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

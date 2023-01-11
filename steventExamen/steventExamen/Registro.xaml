@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="steventExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+
+
+            <Label Text="Ventana de Pagos" HorizontalTextAlignment="Center" FontSize="28"/>
+
+            <Label x:Name="lblUsuario" HorizontalTextAlignment="End" FontSize="18"/>
+
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre" FontSize="18" Grid.Row="0" Grid.Column="0"></Label>
+                <Entry x:Name="txtNombre" Placeholder="INGRESE.." Grid.Row="0" Grid.Column="1"></Entry>
+                <Label Text="Monto Inicial" FontSize="18" Grid.Row="1" Grid.Column="0"></Label>
+                <Entry x:Name="txtMontoInicial" Placeholder="INGRESE.."  Grid.Row="1" Grid.Column="1" Keyboard="Numeric" TextChanged="txtMontoInicial_TextChanged"></Entry>
+
+                <Label Text="Pago Mensual" FontSize="18" Grid.Row="2" Grid.Column="0"></Label>
+                <Entry x:Name="txtPagoMensual" Placeholder="INGRESE.." IsReadOnly="TRUE" Keyboard="Numeric" Grid.Row="2" Grid.Column="1"></Entry>
+
+
+
+            </Grid>
+
+            <Button x:Name="btnPagoM" TextColor="Blue" Text="Calcular" Clicked="btnPagoM_Clicked"></Button>
+            <Button x:Name="btnGuardarInfo" TextColor="Blue" Text="Guardar Info" Clicked="btnGuardarInfo_Clicked"></Button>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
